@@ -1,20 +1,28 @@
 // No cambies los nombres de las funciones.
 
+const { default: log } = require("simple-git/src/lib/tasks/log");
+
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  let numeros = [1, 2, 3, 4];
+  return numeros[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  let numeros = [1, 2, 3, 4];
+  return numeros[3];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  let numeros = [1, 2, 3, 4];
+  console.log(numeros.length);
 }
 
 
@@ -23,21 +31,27 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let numeros = [1, 2, 3, 4];
+  for (let i = 0; i < array.length; i++);{
+    numeros[i] = array[i] + 1;
+  }
+    return numeros;
 }
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
-  // Añade el "elemento" al final del array
-  // y devuelve el array
-  // Tu código:
+
+  let numeros = [1, 2, 3, 4];
+  numeros.push("elemento")
+  console.log(numeros);
 }
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
-  // Añade el "elemento" al comienzo del array
-  // y devuelve el array
-  // Pista: usa el método `.unshift`
-  // Tu código:
+  let numeros = [1, 2, 3, 4];
+  numeros.unshift("elemento")
+  console.log(numeros);
+  
 }
 
 
@@ -47,6 +61,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  let palabras = ["Leche", "Arroz", "Pan", "Fideos"];
+  console.log(palabras.join("+" ) );
 }
 
 
@@ -54,6 +70,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  let palabras = ["Leche", "Arroz", "Pan", "Fideos"];
+ for (let i = 0; i < 5; i++) {
+  if(array[i] === elemento) {
+    return true;
+  }
+}
+return false;
 }
 
 
@@ -61,6 +84,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  
 }
 
 
